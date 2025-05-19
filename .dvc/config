@@ -1,4 +1,11 @@
 [core]
-    remote = googledisk
+    remote = myremote2
 ['remote "googledisk"']
     url = gdrive://1nCD8pxQSQvO6t2PYv1CcJt3W4pSopMSk
+['remote "myremote"']
+    url = remote://mygdrive/dvc-storage
+['remote "myremote2"']
+    url = remote://mygdrive2/dvc-storage
+    rclone_config = /home/elena/.config/rclone/rclone.conf
+    rclone_profile = mygdrive2
+    type = rclone
